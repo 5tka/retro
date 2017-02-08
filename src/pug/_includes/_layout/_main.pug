@@ -1,2 +1,107 @@
 main.main
-	h2 main
+	section.reservation
+		.container
+			.content-wrap
+				h2.title Заполните формы для бронирования автомобиля онлайн
+				form.reservation-form
+					.form-block.contacts
+						p.form-title Контактные данные
+						label.reservation-label
+							p.label-text Имя
+							input.feedback-input(type='text' name='fio' placeholder='ФИО')
+						label.reservation-label
+							p.label-text Телефон
+							input.feedback-input(type='text' name='telephone' placeholder='Телефон')
+						label.reservation-label
+							p.label-text e-mail
+							input.feedback-input(type='text' name='email' placeholder='e-mail')
+					.form-block.lease-type
+						p.form-title Выбирите тип аренды
+						.lease-type-checkbox
+							label.checkbox
+								input.inputh(type='radio' name='lease')
+								.checkbox-text
+									span.ico
+									span.span-text На свадьбу
+							label.checkbox
+								input.inputh(type='radio' name='lease')
+								.checkbox-text
+									span.ico
+									span.span-text Для фотосессии
+							label.checkbox
+								input.inputh(type='radio' name='lease')
+								.checkbox-text
+									span.ico
+									span.span-text Встреча в аеропорту
+						label.reservation-label
+							p.label-text Комментарии
+							textarea.feedback-textarea(name='comment' )
+					.form-block.auto-type
+						p.form-title Выберите автомобиль
+						.select-wrapper
+							p.select-wrap
+								select.js_select(name='retro')
+									option(value='0') Ретро автомобили
+							p.select-wrap
+								select.js_select(name='retro')
+									option(value='0') Ретро автомобили
+							p.select-wrap
+								select.js_select(name='retro')
+									option(value='0') Ретро автомобили
+							p.select-wrap
+								select.js_select(name='retro')
+									option(value='0') Ретро автомобили
+							p.select-wrap
+								select.js_select(name='retro')
+									option(value='0') Ретро автомобили
+							p.select-wrap
+								select.js_select(name='retro')
+									option(value='0') Ретро автомобили
+							p.select-wrap
+								select.js_select(name='retro')
+									option(value='0') Ретро автомобили
+							p.select-wrap
+								select.js_select(name='retro')
+									option(value='0') Ретро автомобили
+					.form-block.hours-amount
+						p.form-title Количество часов
+						.hours-slider-wrap
+							p.amounts
+								span.min 2
+								span.max 12
+							#hours-slider
+						.hours-amount-checkbox
+							label.checkbox
+								input.inputh(type='radio' name='time')
+								.checkbox-text
+									span.ico
+									span.span-text 4 часа (по пятницам и субботам)
+							label.checkbox
+								input.inputh(type='radio' name='time')
+								.checkbox-text
+									span.ico
+									span.span-text На ввесь день по специальной цене
+					.form-block.submit-line
+						p.form-title Сумма к оплате
+						p.form-summ 4000 руб.
+						button.reservation-submit(type='submit') Забронировать автомобиль
+				.form-footer
+					| Бронируя автомобиль, вы автоматически соглашаетесь с
+					a.link(href='#') правилами аренды автомобиля
+					| <br> в компании "Ретро прокат"
+			.sidebar
+				form.feedback-form
+					p.feedback-title Обратная связь
+					label.feedback-label
+						p.label-text Имя
+						input.feedback-input(type='text' name='fio' placeholder='ФИО')
+					label.feedback-label
+						p.label-text Телефон
+						input.feedback-input(type='text' name='telephone' placeholder='Телефон')
+					label.feedback-label
+						p.label-text e-mail
+						input.feedback-input(type='text' name='email' placeholder='e-mail')
+					label.feedback-label
+						p.label-text Комментарии
+						textarea.feedback-textarea(name='comment' )
+					button.feedback-submit(name='submit') Отправить запрос

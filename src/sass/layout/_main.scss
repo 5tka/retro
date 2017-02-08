@@ -1,0 +1,259 @@
+.reservation {
+	@include clearfix;
+	margin-bottom: 38px;
+}
+.content-wrap {
+	float: left;
+	width: 65.78%;
+	background-color: #ffffff;
+	padding: 30px 10px 55px;
+}
+
+.title {
+	font-size: 18px;
+	font-weight: 700;
+	color: #b94a48;
+	padding-bottom: 18px;
+	margin-bottom: 35px;
+	border-bottom: 1px solid #eeeeee;
+}
+.inputh {
+	display: none;
+}
+.form-block {
+	margin-bottom: 35px;
+}
+.contacts {
+	@include clearfix;
+	.reservation-label {
+		float: left;
+		width: 50%;
+	}
+}
+.form-title {
+	color: #b94a48;
+	font-weight: 700;
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+
+.reservation-label {
+	text-align: left;
+	padding-right: 20px;
+	display: block;
+	margin-bottom: 15px;
+	.label-text {
+		font-size: 14px;
+		font-weight: 700;
+		color: #333;
+		margin-bottom: 8px;
+	}
+}
+
+.lease-type {
+	.checkbox {
+		display: inline-block;
+		width: 30%;
+		text-align: left;
+	}
+}
+.lease-type-checkbox {
+	text-align: center;
+	margin-bottom: 25px;
+}
+.hours-amount-checkbox {
+	font-size: 0;
+	.checkbox {
+		display: inline-block;
+		width: 45%;
+	}
+}
+.hours-slider-wrap {
+	max-width: 380px;
+}
+.amounts {
+	@include clearfix;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #333333;
+	font-weight: 700;
+	.min {
+		float: left;
+	}
+	.max {
+		float: right;
+	}
+}
+.select-wrapper {
+	@include clearfix;
+	.ui-selectmenu-button.ui-button {
+		width: 160px;
+		height: 40px;
+		background-color: #c53e3e;
+		font-weight: 300;
+		color: #f6ddc0;
+		padding: 12px 10px;
+		font-size: 14px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		float: left;
+	}
+	.ui-icon {
+		border-color: #fef5d4 transparent transparent transparent;
+	    border-style: solid;
+	    border-width: 5px 4px 0 4px;
+	    height: 0;
+	    width: 0;
+	    margin-top: 5px;
+	}
+}
+#hours-slider {
+	margin-bottom: 25px;
+	height: 3px;
+	background-color: #cccccc;
+
+	.ui-slider-range {
+		background-color: #c53e3e;
+	}
+	.ui-slider-handle {
+		background-color: #c53e3e;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		top: -9px;
+		margin-left: -10px;
+		&:focus {
+			outline: none;
+		}
+	}
+}
+.checkbox {
+	.checkbox-text {
+		font-size: 14px;
+		.ico {
+			display: inline-block;
+			width: 22px;
+			height: 22px;
+			border: 1px solid #cdcdcd;
+			position: relative;
+			line-height: 20px;
+			text-align: center;
+			border-radius: 50%;
+			margin-right: 18px;
+			&:before {
+				display: inline-block;
+				vertical-align: middle;
+				content: '';
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+			}
+		}
+		.span-text {
+			vertical-align: middle;
+			font-weight: 300;
+			color: #c53e3e;
+		}
+	}
+	.inputh:checked + .checkbox-text {
+		.ico {
+			&:before {
+				background-color: #b8b8b8;
+			}
+		}
+	}
+}
+.submit-line {
+	text-align: center;
+	padding-top: 30px;
+	border-top: 1px solid #eeeeee;
+	.form-title {
+		margin-bottom: 25px;
+	}
+}
+.reservation-submit {
+	color: #fef5d4;
+	font-size: 14px;
+	font-weight: 300;
+	background-color: #c53e3e;
+	padding: 10px 15px;
+}
+.form-summ  {
+	color: #484848;
+	font-weight: 700;
+	font-size: 22px;
+	margin-bottom: 35px;
+}
+.form-footer {
+	font-weight: 300;
+	font-size: 14px;
+	color: #484848;
+	line-height: 22px;
+}
+.link {
+	color: #c53e3e;
+	font-size: 14px;
+	font-weight: 300;
+	text-decoration: underline;
+	margin: 0 0.3em;
+	&:hover {
+		text-decoration: none;
+	}
+}
+/* sideBAR */
+
+.sidebar {
+	float: right;
+	width: 31.56%;
+	background-color: #ffffff;
+	padding: 30px 10px 10px;
+}
+.feedback-title {
+	font-size: 14px;
+	color: #c53e3e;
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+.feedback-label {
+	display: block;
+	margin-bottom: 15px;
+	.label-text {
+		font-size: 14px;
+		font-weight: 700;
+		color: #333;
+		margin-bottom: 8px;
+	}
+}
+.feedback-textarea {
+	height: 54px;
+	resize: none;
+}
+
+.feedback-textarea,
+.feedback-input {
+	display: block;
+	color: #333;
+	width: 100%;
+	font-size: 16px;
+	-webkit-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,.15);
+	-moz-box-shadow: inset 0 1px 1px 0 rgba(0,0,0,.15);
+	box-shadow: inset 0 1px 1px 0 rgba(0,0,0,.15);
+	padding-right: 10px;
+	padding-left: 10px;
+	&:focus {
+		outline: 1px solid #c53e3e;
+	}
+}
+.feedback-input {
+	height: 40px;
+	border: 1px solid #cccccc;
+	font-size: 14px;
+}
+.feedback-submit {
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 14px;
+	color: #fef5d4;
+	font-weight: 300;
+	background-color: #c53e3e;
+}

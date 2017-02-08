@@ -90,3 +90,22 @@ img {
     height: auto;
     border: 0;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.wrapper {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.maincontent {
+	display: table-row;
+	height: 100%;
+}

@@ -1,5 +1,5 @@
 .footer {
-	color: #fff;
+	color: #fef5d4;
 	background-color: #b94a48;
 	position: relative;
 	padding-top: 15px;
@@ -52,7 +52,7 @@
 	display: block;
 	width: 30px;
 	height: 30px;
-	background-color: #fff;
+	background-color: #fef5d4;
 	background-position: center;
 	overflow: hidden;
 	text-indent: -9999px;
@@ -89,4 +89,28 @@
 }
 .foot-item {
 	display: list-item;
+}
+
+.call-me {
+    width: 70px;
+    height: 70px;
+    line-height: 62px;
+	text-align: center;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border: 3px solid #fff;
+	background-color: #c33e3e;
+	transition: background-color 0.25s;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	cursor: pointer;
+	img {
+		vertical-align: middle;
+		display: inline-block;
+	}
+	&:hover {
+		background-color: #b94a48;
+	}
 }
