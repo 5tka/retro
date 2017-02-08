@@ -1,0 +1,92 @@
+.footer {
+	color: #fff;
+	background-color: #b94a48;
+	position: relative;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 14px;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 5px;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background-image: url(../img/footer_line.png);
+		background-repeat: repeat-x;
+	}
+	.text.italic {
+		font-style: italic;
+	}
+}
+.footer-content {
+	@include clearfix;
+	font-size: 0;
+	.block {
+		font-size: 14px;
+		display: inline-block;
+		vertical-align: top;
+		width: 25%;
+		padding-right: 10px;
+	}
+	.corp {
+		font-size: 14px;
+	}
+}
+.footer-title {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+.socials-block {
+	margin-top: 20px;
+}
+.social-list {
+	@include clearfix;
+}
+.social-item {
+	float: left;
+	margin-right: 10px;
+}
+.social-link {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	background-position: center;
+	overflow: hidden;
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+	&.odn {
+		background-image: url(../img/icons/odn-square.svg);
+		&:hover {
+			background-image: url(../img/icons/odn-square_h.svg);
+		}
+	}
+	&.vk {
+		background-image: url(../img/icons/vk-square.svg);
+		&:hover {
+			background-image: url(../img/icons/vk-square_h.svg);
+		}
+	}
+	&.fb {
+		background-image: url(../img/icons/fb-square.svg);
+		&:hover {
+			background-image: url(../img/icons/fb-square_h.svg);
+		}
+	}
+	&.insta {
+		background-image: url(../img/icons/insta-square.svg);
+		&:hover {
+			background-image: url(../img/icons/insta-square_h.svg);
+		}
+	}
+}
+
+.foot-list {
+	margin-left: 35px;
+	margin-bottom: 15px;
+}
+.foot-item {
+	display: list-item;
+}
