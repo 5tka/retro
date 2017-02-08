@@ -7,4 +7,12 @@ $(function(){
 		value: 4
 	});
 	$('.js_select').selectmenu();
+
+
+    $('.dd-tr').click(function(){
+        $(this).toggleClass('tr180');
+        $('.dd').stop(true).slideToggle('slow');
+
+    });
 })
+

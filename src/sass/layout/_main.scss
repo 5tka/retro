@@ -84,6 +84,19 @@
 		float: right;
 	}
 }
+.ui-selectmenu-open {
+	background-color: #fff;
+	border: 1px solid #c53e3e;
+	color: #484848;
+	font-size: 14px;
+}
+.ui-menu .ui-menu-item-wrapper {
+	padding: 8px 3px;
+}
+.ui-menu .ui-state-active, .ui-menu .ui-state-focus {
+	margin: 0;
+	background-color: #fef5d4;
+}
 .select-wrapper {
 	@include clearfix;
 	.ui-selectmenu-button.ui-button {
