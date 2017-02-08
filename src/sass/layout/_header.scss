@@ -1,0 +1,229 @@
+.tr180 {
+    &:after {
+        @include transition(.25s);
+        transform: rotate(180deg);
+    }
+}
+.header {
+    font-family: "helios";
+    font-weight: 700;
+    .header__first-line {
+        margin-bottom: 35px;
+        .container {
+            padding-top: 15px;
+            @include clearfix;
+        }
+    }
+    .logo-img {
+        width: 33%;
+        float: left;
+        a {
+            padding-left: 15px;
+            display: block;
+        }
+    }
+    .logo-dd {
+        font-size: 14px;
+        color: #6b6969;
+        position: relative;
+        display: inline-block;
+        p {
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .dd-tr {
+            @include transition(.25s);
+            color: #b94a48;
+            position: relative;
+            cursor: pointer;
+            &:after {
+                content: "";
+                position: absolute;
+                background: url("../img/arrow-d.png");
+                width: 9px;
+                height: 5px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                margin-left: 3px;
+            }
+        }
+        .dd {
+            display: none;
+            color: #b94a48;
+            position: absolute;
+            right: -2px;
+            text-align: right;
+        }
+    }
+    .tell-wrap {
+        width: 33%;
+        text-align: center;
+        float: left;
+        font-size: 14px;
+        color: #6b6969;
+        p {
+            margin-bottom: 5px;
+        }
+        a {
+            font-size: 20px;
+            color: #f73431;
+        }
+    }
+    .writeUs-wrap {
+        width: 33%;
+        text-align: center;
+        float: left;
+        font-size: 14px;
+        color: #6b6969;
+        p {
+            margin-bottom: 5px;
+        }
+        a {
+            font-size: 20px;
+            color: #f73431;
+        }
+    }
+}
+.header__second-line {
+    .header__mnu {
+        ul {
+            font-size: 18px;
+            @include clearfix;
+        }
+        li {
+            float: left;
+            // background: #b94a48;
+            // color: #fef5d4;
+            color: $footer;
+            font-weight: bold;
+            @include transition(.25s);
+            a {
+                padding: 20px;
+                display: block;
+                text-transform: uppercase;
+                position: relative;
+            }
+            &:hover {
+                background: #b94a48;
+                color: #fef5d4;
+                &:nth-child(1),
+                &:nth-child(2) {
+                    a {
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            background: url("../img/arrow-d2.png");
+                            width: 9px;
+                            height: 5px;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                            margin-left: 3px;
+                        }
+                    }
+                }
+            }
+            &:first-child {
+                a {
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        background: url("../img/arrow-d.png");
+                        width: 9px;
+                        height: 5px;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        margin-left: 3px;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                a {
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        background: url("../img/arrow-d.png");
+                        width: 9px;
+                        height: 5px;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
+        .header__mnu--active {
+            background: #b94a48;
+            color: #fef5d4;
+            &:nth-child(1),
+            &:nth-child(2) {
+                a {
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        background: url("../img/arrow-d2.png") !important;
+                        width: 9px;
+                        height: 5px;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        margin-left: 3px;
+                    }
+                }
+            }
+            &:hover {
+                &:nth-child(2) {
+                    a {
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            background: url("../img/arrow-d.png");
+                            width: 9px;
+                            height: 5px;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                            margin-left: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.header__sub-mnu {
+    font-family: "helios";
+    font-weight: 700;
+    background: #b94a48;
+    font-size: 14px;
+    height: 60px;
+    ul {
+        padding: 14px 0;
+    }
+    // line-height: 60px;
+    li {
+        &:first-child {
+            margin-left: 13px;
+        }
+        display: inline-block;
+        color: #fef5d4;
+        outline: 1px solid #fef5d4;
+        margin-right: 13px;
+        &:last-child {
+            margin-left: 120px;
+            margin-right: 0;
+        }
+        a {
+            padding: 8px 10px;
+            display: block;
+            @include transition(.25s);
+            &:hover {
+                color: #b94a48;
+                background: #fef5d4;
+            }
+        }
+    }
+}
