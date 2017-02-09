@@ -9,10 +9,22 @@
 }
 
 .maincontent {
-  background-image: url(../img/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+.tr180 {
+    &:after {
+        @include transition(.25s);
+        transform: rotate(180deg);
+    }
+}
+.dn {
+    display: none !important;
+}
+.db {
+    display: block !important;
 }
