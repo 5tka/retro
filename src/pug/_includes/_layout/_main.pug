@@ -8,15 +8,15 @@ main.main
 						p.form-title Контактные данные
 						label.reservation-label
 							p.label-text Имя
-							input.feedback-input(type='text' name='fio' placeholder='ФИО')
+							input.feedback-input(type='text' name='fio' placeholder='')
 						label.reservation-label
 							p.label-text Телефон
-							input.feedback-input(type='text' name='telephone' placeholder='Телефон')
+							input.feedback-input(type='text' name='telephone' placeholder='')
 						label.reservation-label
-							p.label-text e-mail
-							input.feedback-input(type='text' name='email' placeholder='e-mail')
+							p.label-text E-mail
+							input.feedback-input(type='text' name='email' placeholder='')
 					.form-block.lease-type
-						p.form-title Выбирите тип аренды
+						p.form-title Выберите тип аренды
 						.lease-type-checkbox
 							label.checkbox
 								input.inputh(type='radio' name='lease')
@@ -34,7 +34,7 @@ main.main
 									span.ico
 									span.span-text Встреча в аеропорту
 						label.reservation-label
-							p.label-text Комментарии
+							p.label-text Другой вариант
 							textarea.feedback-textarea(name='comment' )
 					.form-block.auto-type
 						p.form-title Выберите автомобиль
@@ -110,10 +110,10 @@ main.main
 								input.inputh(type='radio' name='time')
 								.checkbox-text
 									span.ico
-									span.span-text На ввесь день по специальной цене
+									span.span-text На весь день по специальной цене
 					.form-block.submit-line
 						p.form-title Сумма к оплате
-						p.form-summ 4000 руб.
+						p.form-summ 0 руб.
 						button.reservation-submit(type='submit') Забронировать автомобиль
 				.form-footer
 					| Бронируя автомобиль, вы автоматически соглашаетесь с
