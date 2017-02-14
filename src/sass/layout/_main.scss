@@ -306,3 +306,21 @@
         background-color: #29b1a6 !important;
     }
 }
+.popup-form-tht {
+    display: none; 
+    width: 650px;
+    height: 250px;
+    background: #c53e3e;
+    padding: 30px;
+    text-align: center;
+    img {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 26px;
+    }
+}
